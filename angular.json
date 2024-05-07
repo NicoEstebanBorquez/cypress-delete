@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "profanis-yt": {
+    "angular-cypress-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/profanis-yt",
+            "outputPath": "dist/angular-cypress-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -75,18 +75,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "profanis-yt:build"
+            "browserTarget": "angular-cypress-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "profanis-yt:build:production"
+              "browserTarget": "angular-cypress-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "profanis-yt:build"
+            "browserTarget": "angular-cypress-app:build"
           }
         },
         "test": {
@@ -122,24 +122,24 @@
         "e2e": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "profanis-yt:serve",
+            "devServerTarget": "angular-cypress-app:serve",
             "watch": true,
             "headless": false
           },
           "configurations": {
             "production": {
-              "devServerTarget": "profanis-yt:serve:production"
+              "devServerTarget": "angular-cypress-app:serve:production"
             }
           }
         },
         "cypress-run": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "profanis-yt:serve"
+            "devServerTarget": "angular-cypress-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "profanis-yt:serve:production"
+              "devServerTarget": "angular-cypress-app:serve:production"
             }
           }
         },
@@ -153,5 +153,5 @@
       }
     }
   },
-  "defaultProject": "profanis-yt"
+  "defaultProject": "angular-cypress-app"
 }

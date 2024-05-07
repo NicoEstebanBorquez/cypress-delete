@@ -5,13 +5,13 @@ import { TuiButtonModule, TuiRootModule } from '@taiga-ui/core';
 import { TuiInputModule, TuiInputPasswordModule } from '@taiga-ui/kit';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ProductsComponent } from './products/products.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
-  declarations: [AppComponent, DashboardComponent, LoginComponent, ProductsComponent, NavigationComponent],
+  declarations: [AppComponent, HomeComponent, LoginComponent, ProductsComponent, NavigationComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

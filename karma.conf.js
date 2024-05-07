@@ -19,7 +19,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/profanis-yt'),
+      dir: require('path').join(__dirname, './coverage/angular-cypress-app'),
       subdir: '.',
       reporters: [
         { type: 'html' },
