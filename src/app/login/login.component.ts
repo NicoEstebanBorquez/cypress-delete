@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent {
-  form = new FormGroup({
+  loginForm = new FormGroup({
     username: new FormControl(null, Validators.required),
     password: new FormControl(null, Validators.required),
   });
@@ -15,7 +15,7 @@ export class LoginComponent {
   constructor(private router: Router) {}
 
   login() {
-    if (this.form.invalid) {
+    if (this.loginForm.invalid) {
       return;
     }
 
